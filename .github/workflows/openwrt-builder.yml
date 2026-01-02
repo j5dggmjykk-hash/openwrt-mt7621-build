@@ -37,7 +37,7 @@ jobs:
           make package/luci-app-netspeedtest/compile V=s -j$(nproc)
 
       - name: Upload ipk
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: luci-app-netspeedtest-mt7621
           path: openwrt/bin/packages/mipsel_24kc/luci/*.ipk
